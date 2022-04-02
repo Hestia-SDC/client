@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
+@import "variables";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 1440px) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: 850px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: $color-primary-dark;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
